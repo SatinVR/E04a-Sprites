@@ -37,7 +37,8 @@ class MyGame(arcade.Window):
 
 
     def on_mouse_motion(self, x, y, dx, dy):
-        pass
+        self.animal_sprite.center_x = x + 200 #not knowing whether x or dx is refering to the mouse's postition makes it hard to have the moose follow
+        self.animal_sprite.center_y = y + 200
 
 def main():
     """ Main method """
